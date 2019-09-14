@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body id="bgcolour">
+    <button id="btn">Click here to change the background color</button>
+
+    <script>
+        var grabbgcolour=document.getElementById("bgcolour");
+        var grabbtn=document.getElementById("btn");
+        var arr=[0,1,2,3,4,5,6,7,8,9];
+        grabbtn.addEventListener("click",function(e)
+        {   
+            var a=Math.floor(Math.random()*arr.length);
+            var b=Math.floor(Math.random()*arr.length);
+            var c=Math.floor(Math.random()*arr.length);
+            var d=Math.floor(Math.random()*arr.length);
+            var e=Math.floor(Math.random()*arr.length);
+            var f=Math.floor(Math.random()*arr.length);
+            var colour=`#${a}${b}${c}${d}${e}${f}`;
+            grabbgcolour.style.backgroundColor=colour;
+        })
+    </script>
+</body>
+</html>
